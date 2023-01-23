@@ -6,6 +6,10 @@ Pokedex is a project that contains a list of pokemons and its details where the 
 
 <!-- region:description -->
 
+<p align="center">
+    <img src="images/pokedex_app.gif" />
+</p>
+
 This project aims to meet the challenge of BCI, in addition to having the implementation of MVVM + Clean Architecture + Dagger hilt + Flow, and android jetpack libraries
 
 <!-- endregion:description -->
