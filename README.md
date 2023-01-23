@@ -60,8 +60,6 @@ Also, included MVVM (Model View ViewModel) architecture pattern was used, corout
     <img src="images/pokedex_clean_module.png" />
 </p>
 
-If the project starts to grow, it is recommended to use a clean architecture as shown below:
-
 
 
 
