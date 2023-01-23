@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pokedex_graph"
+    app:startDestination="@id/pokedexFragment">
+
+    <fragment
+        android:id="@+id/pokedexFragment"
+        android:name="com.bci.ui.pokemon.PokemonFragment">
+        <action
+            android:id="@+id/action_pokedexFragment_to_pokemonDetailFragment"
+            app:destination="@id/pokemonDetailFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            >
+            <argument android:name="idPokemon" />
+        </action>
+
+    </fragment>
+    <dialog
+        android:id="@+id/pokemonDetailFragment"
+        android:name="com.bci.ui.pokemon.detail.PokemonDetailFragment"
+        android:label="fragment_pokedex_detail">
+    </dialog>
+</navigation>

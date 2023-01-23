@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/pokedexDetailContainer"
+    android:scrollbars="vertical"
+    tools:context=".detail.PokemonDetailFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:id="@+id/pokemonDetailContainerConstraintLayout">
+
+        <com.bci.uicomponents.avatar.BCIAvatar
+            android:id="@+id/pokemonDetailBCIAvatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bci_avatar_background_color="@color/lightYellow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/backImageView" />
+
+        <TextView
+            android:id="@+id/pokemonDetailNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pokemonDetailBCIAvatar"
+            tools:text="Pokemón" />
+
+        <TextView
+            android:id="@+id/pokemonDetailTypeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/pokemonEvolutionTitleTextView"
+            tools:text="Tipo:" />
+
+        <TextView
+            android:id="@+id/pokemonDetailAbilitiesTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:gravity="start"
+            android:text="@string/pokemon_detail_abilities_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/evolutionPokemonImageView" />
+        <ImageView
+            android:id="@+id/evolutionPokemonImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/pokeball_icon"
+            app:layout_constraintStart_toEndOf="@+id/pokemonEvolutionTitleTextView"
+            app:layout_constraintTop_toBottomOf="@+id/pokemonEvolutionTitleTextView" />
+
+        <TextView
+            android:id="@+id/pokemonEvolutionTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/pokemon_detail_evolution_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pokemonDetailNameTextView" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/pokemonDetailMovesPokemonChipGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="@+id/pokemonDetailTypeTextView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/pokemonDetailAbilitiesTextView"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/pokemonDetailLocationsTitlePokemonTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/pokemon_detail_location_title"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/pokemonDetailMovesPokemonChipGroup" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/pokemonDetailLocationsPokemonChipGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="end"
+            app:layout_constraintEnd_toEndOf="@+id/pokemonDetailTypeTextView"
+            app:layout_constraintStart_toStartOf="@+id/pokemonDetailLocationsTitlePokemonTextView"
+            app:layout_constraintTop_toBottomOf="@+id/pokemonDetailLocationsTitlePokemonTextView" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/pokemon_detail_skills_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pokemonDetailSkillsChipGroup" />
+
+        <ImageView
+            android:id="@+id/backImageView"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_back_flow"
+            android:paddingStart="16dp"
+            android:paddingTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/pokemonDetailSkillsChipGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pokemonDetailAbilitiesTextView">
+
+        </com.google.android.material.chip.ChipGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

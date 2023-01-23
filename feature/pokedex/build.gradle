@@ -1,0 +1,51 @@
+plugins {
+    alias libs.plugins.android.library
+    alias libs.plugins.kotlin.android
+    alias libs.plugins.kotlin.kapt
+    alias libs.plugins.safeArgs
+}
+
+android {
+    namespace 'com.bci.pokedex'
+    compileSdk libs.versions.compileSdk.get() as int
+
+    defaultConfig {
+        minSdk libs.versions.minSdk.get() as int
+        targetSdk libs.versions.targetSdk.get() as int
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_11
+    }
+
+    viewBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation libs.bundles.lifecycle
+    implementation libs.glide
+    kapt libs.glide.compiler
+    implementation libs.fragment.ktx
+    implementation libs.navigation.hilt
+    implementation libs.navigation.ui.ktx
+    implementation project(':feature:pokedexdata')
+    implementation project(':core:resources')
+    implementation project(':core:common')
+    implementation project(':core:uicomponents')
+    implementation libs.bundles.kotlin
+    implementation libs.material
+    implementation libs.appcompat
+    testImplementation project(':core:test')
+}
