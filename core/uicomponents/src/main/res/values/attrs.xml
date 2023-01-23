@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BCIAvatar">
+
+
+        <attr name="bci_avatar_type" format="enum">
+            <enum name="icon" value="1" />
+            <enum name="letters" value="2" />
+            <enum name="img" value="3" />
+        </attr>
+
+        <attr name="bci_avatar_letters" format="string|reference" />
+        <attr name="bci_avatar_icon" format="reference" />
+        <attr name="bci_avatar_placeholder" format="reference" />
+        <attr name="bci_avatar_background_color" format="color|reference" />
+        <attr name="bci_avatar_icon_tint" format="color|reference" />
+        <attr name="bci_avatar_letter_color" format="color|reference" />
+    </declare-styleable>
+</resources>
