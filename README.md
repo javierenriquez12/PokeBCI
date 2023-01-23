@@ -40,8 +40,13 @@ This project aims to meet the challenge of BCI, in addition to having the implem
 [//]: # 'general content diagram'
 
 #### Internal structure
+The project included Modular Architecture was used, for organized a codebase into loosely coupled and self contained parts. Each module is independent and serves a clear purpose. By dividing a problem into smaller and easier to solve subproblems, you reduce the complexity of designing and maintaining a large system.
 
-The project included MVVM (Model View ViewModel) architecture pattern was used, coroutines, live data, sealed classes, repository and data sources.
+<p align="center">
+    <img src="images/pokemon_architecture.png" />
+</p>
+
+Also, included MVVM (Model View ViewModel) architecture pattern was used, coroutines, live data, sealed classes, repository and data sources.
 
 > Navigation should be handled via [**Navigation Component**] (https://developer.android.com/guide/navigation/navigation-getting-started).<br><br>
 > In case other activities have to be managed, the stack of views must be taken into account to be able to remove them when the project flow ends.
@@ -61,4 +66,4 @@ If the project starts to grow, it is recommended to use a clean architecture as 
 
 | Min SDK              | Target SDK          | Java     | Kotlin | AGP  |
 |----------------------|---------------------|----------|--------|------|
-| API 21 (Android 5.0) | API 32 (Android 12) | Java 11+ | 1.7.0  | 7.0+ |
+| API 21 (Android 5.0) | API 33 (Android 13) | Java 11+ | 1.7.0  | 7.0+ |
