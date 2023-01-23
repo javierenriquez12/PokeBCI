@@ -1,4 +1,4 @@
-package com.bci.ui.pokemon.detail
+package com.bci.ui.pokedex.detail
 
 import android.content.res.ColorStateList
 import android.os.Bundle

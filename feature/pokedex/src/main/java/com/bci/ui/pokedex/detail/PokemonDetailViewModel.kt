@@ -1,4 +1,4 @@
-package com.bci.ui.pokemon.detail
+package com.bci.ui.pokedex.detail
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

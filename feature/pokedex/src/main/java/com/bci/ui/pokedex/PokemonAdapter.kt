@@ -1,4 +1,4 @@
-package com.bci.ui.pokemon
+package com.bci.ui.pokedex
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

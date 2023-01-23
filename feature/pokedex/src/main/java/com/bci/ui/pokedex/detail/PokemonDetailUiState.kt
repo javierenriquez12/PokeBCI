@@ -1,4 +1,4 @@
-package com.bci.ui.pokemon.detail
+package com.bci.ui.pokedex.detail
 
 import com.bci.data.domain.model.Pokemon
 

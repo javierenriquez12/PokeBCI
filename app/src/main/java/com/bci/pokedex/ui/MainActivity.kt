@@ -1,4 +1,4 @@
-package com.bci.pokemon.ui
+package com.bci.pokedex.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

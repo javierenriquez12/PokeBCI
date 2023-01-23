@@ -2,6 +2,7 @@ plugins {
     alias libs.plugins.android.library
     alias libs.plugins.kotlin.android
     alias libs.plugins.kotlin.kapt
+    alias libs.plugins.dagger
 }
 
 android {
@@ -33,6 +34,8 @@ android {
 dependencies {
     implementation libs.bundles.kotlin
     implementation libs.kotlin.serialization
+    implementation libs.dagger
+    kapt libs.dagger.compiler
     //http
     implementation libs.bundles.http
     //dagger

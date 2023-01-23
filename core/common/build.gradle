@@ -1,9 +1,7 @@
 plugins {
     alias libs.plugins.android.library
     alias libs.plugins.kotlin.android
-    alias libs.plugins.kotlin.kapt
-    alias libs.plugins.dagger
-}
+    alias libs.plugins.kotlin.kapt}
 
 android {
     namespace 'com.bci.common'
@@ -35,8 +33,6 @@ android {
 
 dependencies {
     api libs.bundles.kotlin
-    api libs.dagger
-    kapt libs.dagger.compiler
     implementation libs.appcompat
     implementation libs.material
 

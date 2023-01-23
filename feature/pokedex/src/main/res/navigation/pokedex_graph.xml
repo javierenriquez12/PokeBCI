@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/pokedexFragment"
-        android:name="com.bci.ui.pokemon.PokemonFragment">
+        android:name="com.bci.ui.pokedex.PokemonFragment">
         <action
             android:id="@+id/action_pokedexFragment_to_pokemonDetailFragment"
             app:destination="@id/pokemonDetailFragment"
@@ -18,7 +18,7 @@
     </fragment>
     <dialog
         android:id="@+id/pokemonDetailFragment"
-        android:name="com.bci.ui.pokemon.detail.PokemonDetailFragment"
+        android:name="com.bci.ui.pokedex.detail.PokemonDetailFragment"
         android:label="fragment_pokedex_detail">
     </dialog>
 </navigation>
